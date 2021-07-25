@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import Nav from "./partials/Nav";
+import Footer from "./partials/Footer";
+import People from "./People/People";
+import Home from "./Home/Home";
+import Starships from "./Starships/Starships";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Nav />
+
+        {/* For new navigation routes */}
+        <Switch>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/people" component={People} />
+          <Route exact path="/starships" component={Starships} />
+        </Switch>
+
+        <Footer></Footer>
+      </div>
+    </Router>    
   );
 }
-
-export default App;
