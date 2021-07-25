@@ -1,5 +1,5 @@
 import React from 'react';
-import loading from '../rocket.gif';
+import loading from '../img/rocket.gif';
 
 export default function Loading() {
   return(

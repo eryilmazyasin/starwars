@@ -1,4 +1,4 @@
-import logo from '../logo.png';
+import logo from '../img/logo.png';
 
 export default function Logo(props) {
   return (

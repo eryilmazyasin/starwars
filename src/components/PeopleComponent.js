@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../unknown.jpeg';
+import avatar from '../img/unknown.jpeg';
 
 export default function PeopleComponent({name, gender}) {
   return (
