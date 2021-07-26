@@ -6,7 +6,6 @@ import { Link, useLocation } from "react-router-dom";
 export default function Nav() {
   const location = useLocation();
   const { pathname } = location;
-  console.log(pathname);
 
   return (
     <nav className="navbar navbar-expand-sm navbar-light">

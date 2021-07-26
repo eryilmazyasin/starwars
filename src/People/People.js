@@ -43,7 +43,7 @@ export default function People(props) {
       <div className="row">
         {people.map((people, index) => {
           return (
-            <PeopleComponent key={ index } index={index} name={people.name} gender={people.gender} />
+            <PeopleComponent key={ index } name={people.name} gender={people.gender} />
           )
         })}
       </div>
