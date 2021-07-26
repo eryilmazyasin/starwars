@@ -7,7 +7,7 @@ import PeopleComponent from '../components/PeopleComponent';
 import { pageNames } from '../common/PageNames';
 
 
-export default function People(props) {
+export default function People() {
   const [people, setPeople] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
