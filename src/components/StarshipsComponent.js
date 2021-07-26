@@ -4,7 +4,7 @@ export default function PeopleComponent({name, model}) {
   return (
     <div className="col-lg-4 col-md-6 card--item">
       <div className="card--item__inner shadow">
-        <img className="no-filter" src={starship} alt="characters" />
+        <img className="no-filter" src={starship} alt="starships" />
         <div className="card--item__inner-infos">
           <h5>{name}</h5>
           <small>{model}</small>
